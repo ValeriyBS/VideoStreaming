@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoStreaming", "VideoStreaming\VideoStreaming.csproj", "{B6B8B688-3AFC-4D68-99E3-99AA976DFE2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azure", "azure", "{117ADBDB-E599-4D38-BB95-04786D0BD8A5}"
+	ProjectSection(SolutionItems) = preProject
+		Azure\blob.yml = Azure\blob.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html", "html", "{AAC9D2BE-1798-4322-A67A-5F58EAA1FF9F}"
+	ProjectSection(SolutionItems) = preProject
+		Html\VideoStreaming.html = Html\VideoStreaming.html
+		Html\VideoStreaming2.html = Html\VideoStreaming2.html
+		Html\VideoStreaming3.html = Html\VideoStreaming3.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6B8B688-3AFC-4D68-99E3-99AA976DFE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B8B688-3AFC-4D68-99E3-99AA976DFE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B8B688-3AFC-4D68-99E3-99AA976DFE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B8B688-3AFC-4D68-99E3-99AA976DFE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C38D996A-F389-43BA-96CD-751ECB35677C}
+	EndGlobalSection
+EndGlobal

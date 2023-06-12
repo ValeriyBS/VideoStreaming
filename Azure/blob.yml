@@ -1,0 +1,27 @@
+# Set variables
+$resourceGroupName="blob-storage-resource-group-01"
+$storageAccountName="blobstorage656787001"
+$location="northeurope"
+$sku="Standard_LRS"
+
+# Create a resource group
+az group create --name $resourceGroupName --location $location
+
+# Create a storage account
+az storage account create `
+  --name $storageAccountName `
+  --resource-group $resourceGroupName `
+  --location $location `
+  --sku $sku `
+  --kind BlobStorage `
+  --access-tier Cool `
+
+# Retrieve the connection string
+connectionString=$(az storage account show-connection-string `
+  --name $storageAccountName `
+  --resource-group $resourceGroupName `
+  --query connectionString `
+  --output tsv)
+
+echo "Storage account created successfully!"
+echo "Connection string: $connectionString"
